@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180724 17:59:30.857" generator="Robot 3.0.3 (Python 2.7.10 on darwin)">
+<suite source="/Users/whinstondj/Desktop/Resize Window/resize.robot" id="s1" name="Resize">
+<test id="s1-t1" name="001 Abrir pagina y cambiar tamano">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.mobilepractice.io/en/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180724 17:59:32.388" level="INFO">Opening browser 'chrome' to base url 'https://www.mobilepractice.io/en/'.</msg>
+<status status="PASS" endtime="20180724 17:59:43.630" starttime="20180724 17:59:32.387"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>767</arg>
+<arg>600</arg>
+</arguments>
+<status status="PASS" endtime="20180724 17:59:43.781" starttime="20180724 17:59:43.631"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=/html/body/header/div/div/div[2]/div</arg>
+</arguments>
+<msg timestamp="20180724 17:59:43.840" level="INFO">Element 'xpath=/html/body/header/div/div/div[2]/div' is displayed.</msg>
+<status status="PASS" endtime="20180724 17:59:43.841" starttime="20180724 17:59:43.781"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>768</arg>
+<arg>600</arg>
+</arguments>
+<status status="PASS" endtime="20180724 17:59:43.980" starttime="20180724 17:59:43.841"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>xpath=/html/body/header/div/div/div[2]/div</arg>
+</arguments>
+<msg timestamp="20180724 17:59:44.001" level="INFO">Element 'xpath=/html/body/header/div/div/div[2]/div' exists but is not displayed.</msg>
+<status status="PASS" endtime="20180724 17:59:44.001" starttime="20180724 17:59:43.980"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180724 17:59:44.753" starttime="20180724 17:59:44.002"></status>
+</kw>
+<status status="PASS" endtime="20180724 17:59:44.754" critical="yes" starttime="20180724 17:59:32.386"></status>
+</test>
+<status status="PASS" endtime="20180724 17:59:44.813" starttime="20180724 17:59:30.869"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Resize" pass="1">Resize</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
